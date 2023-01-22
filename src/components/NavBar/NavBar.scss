@@ -24,7 +24,7 @@
     color: #{$white};
     .nav-item-button {
         @include small-only {
-            visibility: hidden;
+            display: none;
         }
     
         @include medium-up {
@@ -42,7 +42,7 @@
 
     .demo-button {
         @include small-only {
-            visibility: hidden;
+            display: none;
         }
         @include medium-up {
             visibility: visible;
@@ -53,7 +53,7 @@
             visibility: visible;
         }
                 @include medium-up {
-                    visibility: hidden;
+                    display: none;
                 }
     }
 }
