@@ -2,6 +2,7 @@ import NavBar from "./components/NavBar";
 import Header from "./components/Header";
 import DemoContent from "./components/DemoContent";
 import React, { useEffect, useState } from "react";
+import "./constants/colors.scss";
 
 function App() {
   const [data, setData] = useState({});

@@ -1,10 +1,13 @@
+@import '../../constants/colors.scss';
+@import '../../constants/mixins/button.scss';
+@import '../../constants/mixins/media_queries.scss';
 .sticky-nav {
     top: 0;
     position: sticky;
     z-index: 2;
 }
 .navbar-background {
-    background-color: #100f10;
+    background-color: #{$surface-dark};
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -18,8 +21,16 @@
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
-    gap: 20px;
-    color: #fff;
+    color: #{$white};
+    .nav-item-button {
+        @include small-only {
+            visibility: hidden;
+        }
+    
+        @include medium-up {
+            visibility: visible;
+        }
+    }
 }
 
 .navbar-section-end {
@@ -28,15 +39,53 @@
     flex-direction: row;
     align-items: center;
     justify-content: flex-end;
+
+    .demo-button {
+        @include small-only {
+            visibility: hidden;
+        }
+        @include medium-up {
+            visibility: visible;
+        }
+    }
+    .navbar-section-end-dropdown-button {
+        @include small-only {
+            visibility: visible;
+        }
+                @include medium-up {
+                    visibility: hidden;
+                }
+    }
 }
 
 .demo-button {
-    background-image: linear-gradient(135deg, #0084e9, #762cec);
-    padding: .75rem 1.5rem;
-    border-radius: 8px;
-    color: #f4f4f4;
-    text-align: center;
-    cursor: pointer;
-    font-size: 16px;
-    line-height: 24px;
+    @include button;
+    background-image: linear-gradient(135deg, #{$blue}, #{$voilet});
+    color: #{$button-text-white};
+}
+
+.nav-item-button {
+    @include button;
+    background-color: transparent;
+    color: #{$button-text-white};
+}
+.mobile-nav-menu-wrapper {
+    background-color: #{$surface-dark};
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0.5rem 3rem;
+    gap: 10px;
+    .mobile-nav-menu {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        .mobile-nav-menu-item {
+            @include button;
+            color: #{$button-text-white};
+            background: none;
+            padding-left: 0px;
+        }
+    }
 }

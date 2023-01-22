@@ -1,3 +1,7 @@
+@import '../../constants/colors.scss';
+@import '../../constants/mixins/button.scss';
+@import '../../constants/mixins/media_queries.scss';
+
 .header-container {
     display: flex;
     flex-direction: column;
@@ -5,6 +9,9 @@
     margin-top: 1.5rem;
     padding-top: 8rem;
     margin-bottom: 12rem;
+    @include small-only {
+        padding-top: 3.5rem;
+    }
 }
 .header-title {
     font-weight: 600;
@@ -12,22 +19,25 @@
     line-height: 1.2;
     text-align: center;
     padding: 0 20rem;
+    @include small-only {
+        padding: 0 4rem;
+        font-size: 2.5rem;
+    }
 }
 .header-subtitle {
     font-size: medium;
     text-align: left;
-    color: rgb(107 114 128);
+    color: #{$subtitle-gray};
     font-weight: 500;
     line-height: 1.75rem;
     padding: 0 18rem;
+    @include small-only {
+        padding: 0 4rem;
+        line-height: 1.2rem;
+        margin: 2rem 0;
+    }
 }
 .button-brand-view {
-    font-weight: 600;
-    padding: 1rem;
-    background-color: rgb(229 231 235);
-    border-radius: 8px;
-    border: none;
-    cursor: pointer;
-    font-size: 16px;
-    line-height: 24px;
+    @include button;
+    background-color: #{$surface-white};
 }

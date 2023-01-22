@@ -1,3 +1,6 @@
+
+@import '../../constants/colors.scss';
+
 .card-container {
     margin-bottom: 10vmax;
 }
@@ -8,7 +11,7 @@
     line-height: 1.75rem;
     color: transparent;
     background-clip: text;
-    background-image: linear-gradient(60deg, #ff3a7c, #741eff);
+    background-image: linear-gradient(60deg, #{$pink}, #{$voilet});
 }
 
 .card-item-subheading {
@@ -19,7 +22,7 @@
 
 .card-item-description {
     text-align: left;
-    color: rgb(107 114 128);
+    color: #{$subtitle-gray};
     font-weight: 500;
     font-size: 1rem;
     line-height: 1.5rem;
