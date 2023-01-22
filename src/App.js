@@ -1,23 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import NavBar from "./components/NavBar";
+import Header from "./components/Header";
+import DemoContent from "./components/DemoContent";
+import React, { useEffect, useState } from "react";
 
 function App() {
+  const [data, setData] = useState({});
+
+  useEffect(() => {
+    const url = `https://mocki.io/v1/ee762599-31ae-4a3d-a6c7-d596525945e1`;
+
+    const fetchData = async () => {
+      try {
+        const response = await fetch(url);
+        const data = await response.json();
+        setData(data);
+      } catch (error) {
+        console.log("error", error);
+      }
+    };
+
+    fetchData();
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <NavBar />
+      <Header />
+      <DemoContent data={data} />
     </div>
   );
 }

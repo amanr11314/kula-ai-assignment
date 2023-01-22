@@ -1,0 +1,130 @@
+@font-face {
+    font-family: 'Gtwalsheimpro';
+    src: url('https://uploads-ssl.webflow.com/62efc7cb58ad153bfb146988/62efc80b0b52a60267de2e97_GTWalsheimPro-UltraLight.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gtwalsheimpro';
+    src: url('https://uploads-ssl.webflow.com/62efc7cb58ad153bfb146988/62efc80a0897770f5064e35c_GTWalsheimPro-Thin.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gtwalsheimpro';
+    src: url('https://uploads-ssl.webflow.com/62efc7cb58ad153bfb146988/62efc80a089777e30464e35b_GTWalsheimPro-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gtwalsheimpro';
+    src: url('https://uploads-ssl.webflow.com/62efc7cb58ad153bfb146988/62efc80a7d098c5e6e6f459c_GTWalsheimPro-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gtwalsheimpro';
+    src: url('https://uploads-ssl.webflow.com/62efc7cb58ad153bfb146988/62efc80a664d652e275c64b7_GTWalsheimPro-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gtwalsheimpro';
+    src: url('https://uploads-ssl.webflow.com/62efc7cb58ad153bfb146988/62efc80ab7b092fbb08677d9_GTWalsheimPro-Bold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gtwalsheimpro';
+    src: url('https://uploads-ssl.webflow.com/62efc7cb58ad153bfb146988/62efc80ab7b09259098677d8_GTWalsheimPro-Black.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gtwalsheimpro';
+    src: url('https://uploads-ssl.webflow.com/62efc7cb58ad153bfb146988/62efc80b9147fe41c65dcfd5_GTWalsheimPro-UltraLightOblique.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gtwalsheimpro';
+    src: url('https://uploads-ssl.webflow.com/62efc7cb58ad153bfb146988/62efc80ad64065419ec0b364_GTWalsheimPro-ThinOblique.ttf') format('truetype');
+    font-weight: 200;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gtwalsheimpro';
+    src: url('https://uploads-ssl.webflow.com/62efc7cb58ad153bfb146988/62efc80ad05b79a5690a85b5_GTWalsheimPro-LightOblique.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gtwalsheimpro';
+    src: url('https://uploads-ssl.webflow.com/62efc7cb58ad153bfb146988/62efc80a9147fe12175dcfd4_GTWalsheimPro-RegularOblique.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gtwalsheimpro';
+    src: url('https://uploads-ssl.webflow.com/62efc7cb58ad153bfb146988/62efc80a27e6ae5dd7214e71_GTWalsheimPro-MediumOblique.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gtwalsheimpro';
+    src: url('https://uploads-ssl.webflow.com/62efc7cb58ad153bfb146988/62efc80a664d652efe5c64a7_GTWalsheimPro-BoldOblique.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gtwalsheimpro';
+    src: url('https://uploads-ssl.webflow.com/62efc7cb58ad153bfb146988/62efc80a7e27e665aca39797_GTWalsheimPro-BlackOblique.ttf') format('truetype');
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+}
+body,
+html {
+    font-family: Gtwalsheimpro, sans-serif;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+}
+
+* {
+    margin: 0 ;
+    padding: 0;
+}
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+}

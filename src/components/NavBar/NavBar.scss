@@ -1,0 +1,42 @@
+.sticky-nav {
+    top: 0;
+    position: sticky;
+    z-index: 2;
+}
+.navbar-background {
+    background-color: #100f10;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0.5rem 3rem;
+}
+
+.navbar-section-start {
+    display: flex;
+    flex: 0.5;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    color: #fff;
+}
+
+.navbar-section-end {
+    display: flex;
+    flex: 0.5;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.demo-button {
+    background-image: linear-gradient(135deg, #0084e9, #762cec);
+    padding: .75rem 1.5rem;
+    border-radius: 8px;
+    color: #f4f4f4;
+    text-align: center;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 24px;
+}
