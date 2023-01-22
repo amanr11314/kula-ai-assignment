@@ -40,6 +40,11 @@
     box-shadow: 20px 20px 60px #bebebef1,
         -20px -20px 60px #ffffff;
     border-radius: 2vmax;
+    animation: fadeIn ease 5s;
+        -webkit-animation: fadeIn ease 5s;
+        -moz-animation: fadeIn ease 5s;
+        -o-animation: fadeIn ease 5s;
+        -ms-animation: fadeIn ease 5s;
     @include media('>tablet') {
         display: none;
     }
@@ -49,11 +54,6 @@
     height: 100%;
     object-fit: cover;
     border-radius: 2vmax;
-    animation: fadeIn 5s;
-    -webkit-animation: fadeIn 5s;
-    -moz-animation: fadeIn 5s;
-    -o-animation: fadeIn 5s;
-    -ms-animation: fadeIn 5s;
 }
 
 @keyframes fadeIn {
