@@ -25,7 +25,7 @@ const NavBar = () => {
           >
             {isMenuOpen ? (
               <img
-                src="https://img.icons8.com/ios/36/null/delete-sign--v1.png"
+                src="https://img.icons8.com/ios/32/null/delete-sign--v1.png"
                 alt="close-menu"
               />
             ) : (
