@@ -25,6 +25,10 @@
     position: sticky;
     top: 8vmax;
     margin-right: 4vmax;
+    background: #e0e0e0;
+    box-shadow: 20px 20px 60px #bebebef1,
+        -20px -20px 60px #ffffff;
+    border-radius: 2vmax;
     @include media('<tablet') {
         display: none;
     }
@@ -32,6 +36,10 @@
 .demo-content-video-container-mobile {
     height: 45vmax;
     margin-bottom: 2rem;
+    background: #e0e0e0;
+    box-shadow: 20px 20px 60px #bebebef1,
+        -20px -20px 60px #ffffff;
+    border-radius: 2vmax;
     @include media('>tablet') {
         display: none;
     }
