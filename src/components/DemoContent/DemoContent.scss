@@ -1,13 +1,21 @@
+@import '../../constants/mixins/breakpoints.scss';
 .demo-content-container{
     margin-top: 5vmax;
+    margin-bottom: 5vmax;
     display: flex;
     gap: 1vmax;
     height: auto;
+    @include media('<tablet') {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .demo-content-info-container {
-    margin-left: 4vmax;
-    width: 30%;
+    margin: 0 4vmax;
+    @include media('>tablet') {
+        width: 30%;
+    }
 }
 
 .demo-content-video-container {
@@ -16,6 +24,17 @@
     border-radius: 2vmax;
     position: sticky;
     top: 8vmax;
+    margin-right: 4vmax;
+    @include media('<tablet') {
+        display: none;
+    }
+}
+.demo-content-video-container-mobile {
+    height: 45vmax;
+    margin-bottom: 2rem;
+    @include media('>tablet') {
+        display: none;
+    }
 }
 .video-object {
     width: 100%;
